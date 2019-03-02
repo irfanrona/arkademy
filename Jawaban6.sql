@@ -10,7 +10,7 @@ create database gudang;
 
 	create table products (
 		id_prod int not null AUTO_INCREMENT,
-		name varchar (20),
+		name varchar (20) not null,
 		id_cat int not null,
 		primary key (id_prod),
 		foreign key (id_cat) references categories(id_cat)
